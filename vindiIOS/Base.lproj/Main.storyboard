@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="vindiIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dsN-D2-gfb">
+                                <rect key="frame" x="0.0" y="36" width="414" height="824"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="On6-Gr-yXe">
+                                <rect key="frame" x="55" y="747" width="58" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Add trail">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z3t-rD-0Pq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="On6-Gr-yXe" secondAttribute="trailing" constant="279" id="1b8-Qg-R14"/>
+                            <constraint firstItem="On6-Gr-yXe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="3xD-gz-q2p"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="On6-Gr-yXe" secondAttribute="bottom" constant="85" id="42N-gy-dpL"/>
+                            <constraint firstItem="dsN-D2-gfb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Fr1-rM-TAh"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="dsN-D2-gfb" secondAttribute="bottom" id="KfE-5v-2ZE"/>
+                            <constraint firstItem="dsN-D2-gfb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NWe-gX-Igy"/>
+                            <constraint firstItem="dsN-D2-gfb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Uuq-yU-aiE"/>
+                            <constraint firstItem="dsN-D2-gfb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VaR-1N-3ve"/>
+                            <constraint firstItem="dsN-D2-gfb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="eP0-jr-AAZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="dsN-D2-gfb" secondAttribute="bottom" id="qm1-CD-akd"/>
+                            <constraint firstItem="dsN-D2-gfb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vL5-N8-rPL"/>
+                            <constraint firstItem="On6-Gr-yXe" firstAttribute="top" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="752" id="yJd-tj-YEM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="dsN-D2-gfb" id="1x5-by-yEp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA12C43522F078B5002B9FAF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA12C43422F078B5002B9FAF /* Default-568h@2x.png */; };
+		EA9E6F8322E711BF00F28745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E6F8222E711BF00F28745 /* AppDelegate.swift */; };
+		EA9E6F8522E711BF00F28745 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E6F8422E711BF00F28745 /* ViewController.swift */; };
+		EA9E6F8822E711BF00F28745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9E6F8622E711BF00F28745 /* Main.storyboard */; };
+		EA9E6F8A22E711C000F28745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA9E6F8922E711C000F28745 /* Assets.xcassets */; };
+		EA9E6F8D22E711C000F28745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA9E6F8B22E711C000F28745 /* LaunchScreen.storyboard */; };
+		EA9E6F9822E711C000F28745 /* vindiIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E6F9722E711C000F28745 /* vindiIOSTests.swift */; };
+		EA9E6FA322E711C000F28745 /* vindiIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9E6FA222E711C000F28745 /* vindiIOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA9E6F9422E711C000F28745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA9E6F7722E711BF00F28745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9E6F7E22E711BF00F28745;
+			remoteInfo = vindiIOS;
+		};
+		EA9E6F9F22E711C000F28745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA9E6F7722E711BF00F28745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9E6F7E22E711BF00F28745;
+			remoteInfo = vindiIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA12C43422F078B5002B9FAF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EA9E6F7F22E711BF00F28745 /* vindiIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vindiIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9E6F8222E711BF00F28745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA9E6F8422E711BF00F28745 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA9E6F8722E711BF00F28745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA9E6F8922E711C000F28745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA9E6F8C22E711C000F28745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA9E6F8E22E711C000F28745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA9E6F9322E711C000F28745 /* vindiIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vindiIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9E6F9722E711C000F28745 /* vindiIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vindiIOSTests.swift; sourceTree = "<group>"; };
+		EA9E6F9922E711C000F28745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA9E6F9E22E711C000F28745 /* vindiIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vindiIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9E6FA222E711C000F28745 /* vindiIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vindiIOSUITests.swift; sourceTree = "<group>"; };
+		EA9E6FA422E711C000F28745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA9E6F7C22E711BF00F28745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA9E6F9022E711C000F28745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA9E6F9B22E711C000F28745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA9E6F7622E711BF00F28745 = {
+			isa = PBXGroup;
+			children = (
+				EA12C43422F078B5002B9FAF /* Default-568h@2x.png */,
+				EA9E6F8122E711BF00F28745 /* vindiIOS */,
+				EA9E6F9622E711C000F28745 /* vindiIOSTests */,
+				EA9E6FA122E711C000F28745 /* vindiIOSUITests */,
+				EA9E6F8022E711BF00F28745 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA9E6F8022E711BF00F28745 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E6F7F22E711BF00F28745 /* vindiIOS.app */,
+				EA9E6F9322E711C000F28745 /* vindiIOSTests.xctest */,
+				EA9E6F9E22E711C000F28745 /* vindiIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA9E6F8122E711BF00F28745 /* vindiIOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E6F8222E711BF00F28745 /* AppDelegate.swift */,
+				EA9E6F8422E711BF00F28745 /* ViewController.swift */,
+				EA9E6F8622E711BF00F28745 /* Main.storyboard */,
+				EA9E6F8922E711C000F28745 /* Assets.xcassets */,
+				EA9E6F8B22E711C000F28745 /* LaunchScreen.storyboard */,
+				EA9E6F8E22E711C000F28745 /* Info.plist */,
+			);
+			path = vindiIOS;
+			sourceTree = "<group>";
+		};
+		EA9E6F9622E711C000F28745 /* vindiIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E6F9722E711C000F28745 /* vindiIOSTests.swift */,
+				EA9E6F9922E711C000F28745 /* Info.plist */,
+			);
+			path = vindiIOSTests;
+			sourceTree = "<group>";
+		};
+		EA9E6FA122E711C000F28745 /* vindiIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA9E6FA222E711C000F28745 /* vindiIOSUITests.swift */,
+				EA9E6FA422E711C000F28745 /* Info.plist */,
+			);
+			path = vindiIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA9E6F7E22E711BF00F28745 /* vindiIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA9E6FA722E711C000F28745 /* Build configuration list for PBXNativeTarget "vindiIOS" */;
+			buildPhases = (
+				EA9E6F7B22E711BF00F28745 /* Sources */,
+				EA9E6F7C22E711BF00F28745 /* Frameworks */,
+				EA9E6F7D22E711BF00F28745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vindiIOS;
+			productName = vindiIOS;
+			productReference = EA9E6F7F22E711BF00F28745 /* vindiIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA9E6F9222E711C000F28745 /* vindiIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA9E6FAA22E711C000F28745 /* Build configuration list for PBXNativeTarget "vindiIOSTests" */;
+			buildPhases = (
+				EA9E6F8F22E711C000F28745 /* Sources */,
+				EA9E6F9022E711C000F28745 /* Frameworks */,
+				EA9E6F9122E711C000F28745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA9E6F9522E711C000F28745 /* PBXTargetDependency */,
+			);
+			name = vindiIOSTests;
+			productName = vindiIOSTests;
+			productReference = EA9E6F9322E711C000F28745 /* vindiIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA9E6F9D22E711C000F28745 /* vindiIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA9E6FAD22E711C000F28745 /* Build configuration list for PBXNativeTarget "vindiIOSUITests" */;
+			buildPhases = (
+				EA9E6F9A22E711C000F28745 /* Sources */,
+				EA9E6F9B22E711C000F28745 /* Frameworks */,
+				EA9E6F9C22E711C000F28745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA9E6FA022E711C000F28745 /* PBXTargetDependency */,
+			);
+			name = vindiIOSUITests;
+			productName = vindiIOSUITests;
+			productReference = EA9E6F9E22E711C000F28745 /* vindiIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA9E6F7722E711BF00F28745 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Jonna Karlsson Sellén";
+				TargetAttributes = {
+					EA9E6F7E22E711BF00F28745 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					EA9E6F9222E711C000F28745 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = EA9E6F7E22E711BF00F28745;
+					};
+					EA9E6F9D22E711C000F28745 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = EA9E6F7E22E711BF00F28745;
+					};
+				};
+			};
+			buildConfigurationList = EA9E6F7A22E711BF00F28745 /* Build configuration list for PBXProject "vindiIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA9E6F7622E711BF00F28745;
+			productRefGroup = EA9E6F8022E711BF00F28745 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA9E6F7E22E711BF00F28745 /* vindiIOS */,
+				EA9E6F9222E711C000F28745 /* vindiIOSTests */,
+				EA9E6F9D22E711C000F28745 /* vindiIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA9E6F7D22E711BF00F28745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9E6F8D22E711C000F28745 /* LaunchScreen.storyboard in Resources */,
+				EA12C43522F078B5002B9FAF /* Default-568h@2x.png in Resources */,
+				EA9E6F8A22E711C000F28745 /* Assets.xcassets in Resources */,
+				EA9E6F8822E711BF00F28745 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA9E6F9122E711C000F28745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA9E6F9C22E711C000F28745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA9E6F7B22E711BF00F28745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9E6F8522E711BF00F28745 /* ViewController.swift in Sources */,
+				EA9E6F8322E711BF00F28745 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA9E6F8F22E711C000F28745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9E6F9822E711C000F28745 /* vindiIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA9E6F9A22E711C000F28745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9E6FA322E711C000F28745 /* vindiIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA9E6F9522E711C000F28745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA9E6F7E22E711BF00F28745 /* vindiIOS */;
+			targetProxy = EA9E6F9422E711C000F28745 /* PBXContainerItemProxy */;
+		};
+		EA9E6FA022E711C000F28745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA9E6F7E22E711BF00F28745 /* vindiIOS */;
+			targetProxy = EA9E6F9F22E711C000F28745 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA9E6F8622E711BF00F28745 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA9E6F8722E711BF00F28745 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA9E6F8B22E711C000F28745 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA9E6F8C22E711C000F28745 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA9E6FA522E711C000F28745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA9E6FA622E711C000F28745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA9E6FA822E711C000F28745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZTTYX2VUC;
+				INFOPLIST_FILE = vindiIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prototyp.vindiIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA9E6FA922E711C000F28745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZTTYX2VUC;
+				INFOPLIST_FILE = vindiIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prototyp.vindiIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA9E6FAB22E711C000F28745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 279KEKX4A9;
+				INFOPLIST_FILE = vindiIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prototyp.vindiIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vindiIOS.app/vindiIOS";
+			};
+			name = Debug;
+		};
+		EA9E6FAC22E711C000F28745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 279KEKX4A9;
+				INFOPLIST_FILE = vindiIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prototyp.vindiIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vindiIOS.app/vindiIOS";
+			};
+			name = Release;
+		};
+		EA9E6FAE22E711C000F28745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 279KEKX4A9;
+				INFOPLIST_FILE = vindiIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prototyp.vindiIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vindiIOS;
+			};
+			name = Debug;
+		};
+		EA9E6FAF22E711C000F28745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 279KEKX4A9;
+				INFOPLIST_FILE = vindiIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prototyp.vindiIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = vindiIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA9E6F7A22E711BF00F28745 /* Build configuration list for PBXProject "vindiIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA9E6FA522E711C000F28745 /* Debug */,
+				EA9E6FA622E711C000F28745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA9E6FA722E711C000F28745 /* Build configuration list for PBXNativeTarget "vindiIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA9E6FA822E711C000F28745 /* Debug */,
+				EA9E6FA922E711C000F28745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA9E6FAA22E711C000F28745 /* Build configuration list for PBXNativeTarget "vindiIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA9E6FAB22E711C000F28745 /* Debug */,
+				EA9E6FAC22E711C000F28745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA9E6FAD22E711C000F28745 /* Build configuration list for PBXNativeTarget "vindiIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA9E6FAE22E711C000F28745 /* Debug */,
+				EA9E6FAF22E711C000F28745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA9E6F7722E711BF00F28745 /* Project object */;
+}
