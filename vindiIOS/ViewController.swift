@@ -14,16 +14,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet weak var sceneView: ARSCNView!
     var planeGeometry:SCNPlane!
-    let planeIdentifiers = [UUID]()
     var anchors = [ARAnchor]()
-    var sceneLight:SCNLight!
-    var session: AVCaptureSession?
-    var recentFocusSquarePositions = [UUID]()
     var currentAngleY: Float = 0.0
     var startPosition: SCNNode!
     var trail: Array<obsticalPosition> = []
     var addedStartPos: Bool = false
-    var cameraRotation: Float = 0.0
     
     var isRotating: Bool = false
     
@@ -46,12 +41,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         for position in trail {
             let node = SCNNode()
             let pointer = SCNNode()
+            
             node.geometry = SCNCylinder(radius: 0.03, height: 0.01)
             pointer.geometry = SCNCone(topRadius: 0.5, bottomRadius: 0, height: 0.5)
+            
             node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
             pointer.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-            let startPosDegree = rad2deg(startPosition.eulerAngles.y)
             
+            let startPosDegree = rad2deg(startPosition.eulerAngles.y)
             let angle = startPosDegree + position.angle
             let Z = cos(deg2rad(angle)) * position.dist; // x
             let X = sin(deg2rad(angle)) * position.dist; // y
