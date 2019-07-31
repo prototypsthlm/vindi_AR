@@ -22,7 +22,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var currentAngleY: Float = 0.0
     var startPosition: SCNNode!
     var trail: Array<obsticalPosition> = []
-    var addedObject: Bool = false
+    var addedStartPos: Bool = false
     var cameraRotation: Float = 0.0
     
     var isRotating: Bool = false
@@ -37,8 +37,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         trail = [obsticalPosition(angle: 80, dist: 6, type: "cone"),
-               obsticalPosition(angle: 90, dist: 11, type: "cone"),
-               obsticalPosition(angle: 20, dist: 4, type: "cone")]
+                obsticalPosition(angle: 90, dist: 11, type: "cone"),
+                obsticalPosition(angle: 20, dist: 4, type: "cone"),
+                obsticalPosition(angle: -20, dist: 4, type: "cone")]
     }
 
     @IBAction func add(_ sender: Any) {
@@ -50,7 +51,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
             pointer.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
             let startPosDegree = rad2deg(startPosition.eulerAngles.y)
-
+            
             let angle = startPosDegree + position.angle
             let Z = cos(deg2rad(angle)) * position.dist; // x
             let X = sin(deg2rad(angle)) * position.dist; // y
@@ -61,58 +62,53 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             self.sceneView.scene.rootNode.addChildNode(node)
             self.sceneView.scene.rootNode.addChildNode(pointer)
         }
-        
+        self.view.gestureRecognizers?.removeAll()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if !addedObject {
+        if !addedStartPos {
             let touch = touches.first
             let location = touch?.location(in: sceneView)
-            addNodeAtLocation(location: location!)
+            addStartNodeAtLocation(location: location!)
         }
     }
     
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        var node = SCNNode()
-        if let planeAnchor = anchor as? ARPlaneAnchor {
-            node = SCNNode()
-            planeGeometry = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
-            planeGeometry.firstMaterial?.diffuse.contents = UIColor.white.withAlphaComponent(0.5)
-            let planeNode = SCNNode(geometry: planeGeometry)
-            planeNode.position = SCNVector3(x: planeAnchor.center.x, y:0, z: planeAnchor.center.z)
-            planeNode.transform = SCNMatrix4MakeRotation(-Float.pi / 2, 1, 0, 0)
-            
-            updateMaterial()
-            
-            node.addChildNode(planeNode)
-            anchors.append(planeAnchor)
-            
+        let node = SCNNode()
+        if !addedStartPos {
+            if let planeAnchor = anchor as? ARPlaneAnchor {
+                planeGeometry = SCNPlane(width: CGFloat(planeAnchor.extent.x), height: CGFloat(planeAnchor.extent.z))
+                planeGeometry.firstMaterial?.diffuse.contents = UIColor.white.withAlphaComponent(0.5)
+                let planeNode = SCNNode(geometry: planeGeometry)
+                planeNode.position = SCNVector3(x: planeAnchor.center.x, y:0, z: planeAnchor.center.z)
+                planeNode.transform = SCNMatrix4MakeRotation(-Float.pi / 2, 1, 0, 0)
+                
+                node.name = "plane"
+                node.addChildNode(planeNode)
+                anchors.append(planeAnchor)
+            }
         }
         return node
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-        if let planeAnchor = anchor as? ARPlaneAnchor {
-            if anchors.contains(planeAnchor) {
-                if node.childNodes.count > 0 {
-                    let planeNode = node.childNodes.first!
-                    planeNode.position = SCNVector3(x: planeAnchor.center.x, y:0, z: planeAnchor.center.z)
-                    if let plane = planeNode.geometry as? SCNPlane {
-                        plane.width = CGFloat(planeAnchor.extent.x)
-                        plane.height = CGFloat(planeAnchor.extent.z)
-                        updateMaterial()
+        if !addedStartPos {
+            if let planeAnchor = anchor as? ARPlaneAnchor {
+                if anchors.contains(planeAnchor) {
+                    if node.childNodes.count > 0 {
+                        let planeNode = node.childNodes.first!
+                        planeNode.position = SCNVector3(x: planeAnchor.center.x, y:0, z: planeAnchor.center.z)
+                        if let plane = planeNode.geometry as? SCNPlane {
+                            plane.width = CGFloat(planeAnchor.extent.x)
+                            plane.height = CGFloat(planeAnchor.extent.z)
+                        }
                     }
                 }
             }
         }
     }
     
-    func updateMaterial() {
-        let material = self.planeGeometry.materials.first!
-        material.diffuse.contentsTransform = SCNMatrix4MakeScale(Float(self.planeGeometry.width), Float(self.planeGeometry.height), 1)
-    }
-    
-    func addNodeAtLocation(location:CGPoint) {
+    func addStartNodeAtLocation(location:CGPoint) {
         guard anchors.count > 0 else {print("Anchors are not created yet"); return}
         
         let hitResults = sceneView.hitTest(location, types: .existingPlaneUsingExtent)
@@ -125,15 +121,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             startPosition.geometry?.firstMaterial?.diffuse.contents = "Kaktus2.png"
             startPosition.position = newLocation
             self.sceneView.scene.rootNode.addChildNode(startPosition)
-
-            addedObject = true
             
-            let panGesture = UIPanGestureRecognizer(target: self, action: #selector(moveNode(_:)))
-            self.view.addGestureRecognizer(panGesture)
-
-            let rotateGesture = UIRotationGestureRecognizer(target: self, action: #selector(rotateNode(_:)))
-            self.view.addGestureRecognizer(rotateGesture)
+            addedStartPos = true
+            removePlane()
+            setGestures()
+            
         }
+    }
+    
+    func removePlane() {
+        sceneView.scene.rootNode.childNodes.filter({ $0.name == "plane" }).forEach({$0.removeFromParentNode()})
+    }
+    
+    func setGestures() {
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(moveNode(_:)))
+        self.view.addGestureRecognizer(panGesture)
+
+        let rotateGesture = UIRotationGestureRecognizer(target: self, action: #selector(rotateNode(_:)))
+        self.view.addGestureRecognizer(rotateGesture)
     }
     
     @objc func rotateNode(_ gesture: UIRotationGestureRecognizer){
